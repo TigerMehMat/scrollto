@@ -10,9 +10,10 @@
     }, options);
 
     var make = function(){
-      $(this).click(function(){
+      $(this).click(function(e){
         var $element = $(this),
             elementClick = $element.attr("href");
+        e.preventDefault();
 
         elementClick = elementClick.substring(elementClick.lastIndexOf('#'));
 
