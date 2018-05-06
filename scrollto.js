@@ -8,9 +8,11 @@
       speed:300, //цвет элемента над которым нет курсора
       top:1 //цвет элемента на который наведен курсор
     }, options);
-
+    console.log('Init scrollto');
+    console.log(options);
     var make = function(){
       $(this).click(function(e){
+      	console.log('Click scrollto');
         var $element = $(this),
             elementClick = $element.attr("href");
         e.preventDefault();
