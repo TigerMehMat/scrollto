@@ -7,7 +7,7 @@
     options = $.extend({
       speed:300, //цвет элемента над которым нет курсора
       top:1 //цвет элемента на который наведен курсор
-    }, options};
+    }, options);
 
     var make = function(){
       $(this).click(function(){
